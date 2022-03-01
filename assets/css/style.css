@@ -4,7 +4,7 @@
 }
 
 
-/* normalizing styles*/
+/* normalizing styles */
 
 body {
     background-color: var(--bg-color);
@@ -50,22 +50,33 @@ header nav ul li {
     position: relative;
 }
 
-/* interacting with nav */
-header nav ul li:hover a {
+/* interact with nav */
+header nav ul li:hover {
     background-color: tomato;
 }
 
-
-/* main elements */
+/* main section */
 main {
-    background-color: seagreen;
-    max-width: 80%;
-    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    max-height: 90%;
 }
 
-/* main h2 {
-    display: inline;
-} */
+article {
+    background-color: palevioletred;
+}
+
+footer {
+    background-color: mediumslateblue;
+}
+
+
+/* work section */
+.work {
+    background-color: seagreen;
+    /* max-width: 80%;
+    margin-left: 20%; */
+}
 
 .apps {
     display: flex;
@@ -74,7 +85,7 @@ main {
     align-items: flex-start;
 }
 
-section {
+.application {
     background-color: plum;
     flex: 0 0 45%;
 }
@@ -89,14 +100,9 @@ section img {
 }
 
 /* media queries to resize page as needed */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     main {
         max-width: 100%;
         margin-left: 0;
     }
-
-    .apps {
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+} */
