@@ -1,0 +1,33 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 28%;
+}
+
+/* header elements */
+header {
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+header figure {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header nav {
+    flex: 0 1 50%;
+}
+
+header nav ul {
+    background-color: royalblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* main elements */
