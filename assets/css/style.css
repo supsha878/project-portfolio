@@ -1,18 +1,29 @@
-a {
-    text-decoration: none;
-    color: black;
+:root {
+    --bg-color: rgb(22, 15, 51);
+    --text-color: rgb(220, 226, 255);
 }
 
-img {
-    max-width: 28%;
+
+/* normalizing styles*/
+
+body {
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 /* header elements */
 header {
+    padding: 20px 0px 20px 25px;
     background-color: crimson;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
+    color: var(--text-color);
 }
 
 header figure {
@@ -20,14 +31,72 @@ header figure {
     justify-content: flex-start;
 }
 
+header figcaption {
+    font-size: 275%;
+}
+
 header nav {
     flex: 0 1 50%;
 }
 
 header nav ul {
-    background-color: royalblue;
     display: flex;
     justify-content: space-around;
 }
 
+header nav ul li {
+    font-size: 150%;
+    padding: 10px;
+    position: relative;
+}
+
+/* interacting with nav */
+header nav ul li:hover a {
+    background-color: tomato;
+}
+
+
 /* main elements */
+main {
+    background-color: seagreen;
+    max-width: 80%;
+    margin-left: 20%;
+}
+
+/* main h2 {
+    display: inline;
+} */
+
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+section {
+    background-color: plum;
+    flex: 0 0 45%;
+}
+
+#first {
+    flex: 0 0 93.4%;
+}
+
+section img {
+    max-width: 600px;
+    max-height: 200px;
+}
+
+/* media queries to resize page as needed */
+@media screen and (max-width: 992px) {
+    main {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .apps {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
