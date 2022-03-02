@@ -1,11 +1,10 @@
+/* set color variables */
 :root {
-    --bg-color: rgb(22, 15, 51);
+    --bg-color: rgb(9, 6, 20);
     --text-color: rgb(220, 226, 255);
 }
 
-
-/* normalizing styles */
-
+/* body elements */
 body {
     background-color: var(--bg-color);
 }
@@ -18,7 +17,6 @@ a {
 /* header elements */
 header {
     padding: 20px 0px 20px 25px;
-    background-color: crimson;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +30,7 @@ header figure {
 }
 
 header figcaption {
-    font-size: 275%;
+    font-size: 300%;
 }
 
 header nav {
@@ -45,12 +43,11 @@ header nav ul {
 }
 
 header nav ul li {
-    font-size: 150%;
+    font-size: 175%;
     padding: 10px;
-    position: relative;
 }
 
-/* interact with nav */
+/* interact with header nav */
 header nav ul li:hover {
     background-color: tomato;
 }
@@ -62,23 +59,39 @@ main {
     max-height: 90%;
 }
 
-article {
+h2 {
+    flex: 0 1 25%;
+    text-align: end;
+    color: var(--text-color);
+    border-right: solid 2px var(--text-color);
+    padding-right: 3%;
+    font-size: 250%;
+}
+
+/* about section */
+
+#about {
     background-color: palevioletred;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-footer {
-    background-color: mediumslateblue;
+#about article {
+    flex: 0 0 60%;
+    margin-left: 5%;
 }
-
 
 /* work section */
-.work {
+#work {
     background-color: seagreen;
-    /* max-width: 80%;
-    margin-left: 20%; */
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .apps {
+    flex: 0 0 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -97,6 +110,34 @@ footer {
 section img {
     max-width: 600px;
     max-height: 200px;
+}
+
+/* footer elements */
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+footer nav {
+    flex: 1 0 60%;
+    margin: 0 15% 0 0;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav ul li {
+    font-size: 125%;
+    padding: 5px;
+}
+
+/* interact with footer nav */
+footer nav ul li:hover {
+    background-color: tomato;
 }
 
 /* media queries to resize page as needed */
