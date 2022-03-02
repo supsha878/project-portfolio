@@ -40,6 +40,7 @@ header nav {
 header nav ul {
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 header nav ul li {
@@ -49,7 +50,7 @@ header nav ul li {
 
 /* interact with header nav */
 header nav ul li:hover {
-    background-color: tomato;
+    padding: 5px 10px 15px 10px;
 }
 
 /* main section */
@@ -63,7 +64,7 @@ h2 {
     flex: 0 1 25%;
     text-align: end;
     color: var(--text-color);
-    border-right: solid 2px var(--text-color);
+    border-right: solid 1.5px var(--text-color);
     padding-right: 3%;
     font-size: 250%;
 }
