@@ -10,3 +10,5 @@
 1. Created necessary files including an HTML index, a styling CSS file, and a reset CSS file.
 1. Coded basic format into HTML using semantic elements. Entered content including text, links, images, etc.
 1. Formatted page in CSS to look user-friendly, responsive, and dynamic.
+
+[Deployed Webpage](https://supsha878.github.io/project-portfolio/)
