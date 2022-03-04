@@ -2,6 +2,7 @@
 :root {
     --bg-color: rgb(9, 6, 20);
     --text-color: rgb(220, 226, 255);
+    --accent-color: rgb(182, 191, 241);
 }
 
 /* body elements */
@@ -120,19 +121,44 @@ h2 {
     width: 100%;
     height: 260px;
     object-fit: cover;
-    border: solid 10px var(--text-color);
+    border: solid 10px var(--accent-color);
 }
 
 .application figcaption {
     position: absolute;
     bottom: 33%;
-    background-color: var(--text-color);
+    background-color: var(--accent-color);
     padding: 2%;
     color: var(--bg-color);
 }
 
 h3 {
     font-size: 150%;
+}
+
+/* interact with applications */
+/* Louis Lazaris, 2011, Image tint with CSS
+    https://www.impressivewebs.com/image-tint-blend-css/ */
+.application:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    background-color: var(--accent-color);
+    transition: background .3s linear;
+    opacity: 55%;
+}
+
+.application#first:before {
+    top: 5%;
+    bottom: 5%;
+}
+
+.application:hover:before {
+    background: none;
 }
 
 /* footer elements */
