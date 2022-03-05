@@ -148,7 +148,7 @@ h3 {
     right: 0;
     background-color: var(--accent-color);
     transition: background .3s linear;
-    opacity: 55%;
+    opacity: 50%;
 }
 
 .application#first-app::before {
@@ -189,13 +189,7 @@ footer nav ul li:hover {
 }
 
 /* media queries to resize page as needed */
-/* @media screen and (max-width: 992px) {
-    main {
-        max-width: 100%;
-        margin-left: 0;
-    }
-} */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     /* body */
     p {
         font-size: 100%;
@@ -280,5 +274,31 @@ footer nav ul li:hover {
     footer nav {
         width: 100%;
         margin-right: 0;
+    }
+
+    footer nav ul li {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 75%
+    }
+
+    h1 {
+        font-size: 125%;
+    }
+
+    h2 {
+        font-size: 125%;
+    }
+
+    h3 {
+        font-size: 100%;
+    }
+
+    footer nav ul li {
+        font-size: 75%;
     }
 }
