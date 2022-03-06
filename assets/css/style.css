@@ -31,10 +31,17 @@ header {
 
 header figure {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
 }
 
-header figcaption {
+header img {
+    height: 120px;
+    border-radius: 50px;
+    margin-left: 60px;
+    border: solid 5px var(--accent-color);
+}
+
+h1 {
     font-size: 300%;
 }
 
@@ -142,8 +149,8 @@ h3 {
     content: "";
     display: block;
     position: absolute;
-    top: 7.5%;
-    bottom: 7.5%;
+    top: 8.25%;
+    bottom: 8.75%;
     left: 0;
     right: 0;
     background-color: var(--accent-color);
@@ -152,8 +159,8 @@ h3 {
 }
 
 .application#first-app::before {
-    top: 3.75%;
-    bottom: 3.75%;
+    top: 4.5%;
+    bottom: 5%;
 }
 
 .application:hover::before {
@@ -162,34 +169,36 @@ h3 {
 
 /* footer elements */
 
-footer {
+#contact {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
 }
 
-footer nav {
+#contact nav {
     flex: 1 0 60%;
     margin-right: 15%;
 }
 
-footer nav ul {
+#contact nav ul {
     display: flex;
     justify-content: space-around;
 }
 
-footer nav ul li {
+#contact nav ul li {
     font-size: 125%;
     padding: 5px;
 }
 
 /* interact with footer nav */
-footer nav ul li:hover {
+#contact nav ul li:hover {
     padding: 3px 5px 7px 5px;
 }
 
 /* media queries to resize page as needed */
-@media screen and (max-width: 992px) {
+
+/* layout for tablet */
+@media screen and (max-width: 768px) {
     /* body */
     p {
         font-size: 100%;
@@ -205,10 +214,10 @@ footer nav ul li:hover {
         width: 100%;
     }
 
-    /* header figure {
-        display: flex;
-        justify-content: flex-start;
-    } */
+    header nav ul li {
+        font-size: 150%;
+    }
+
 
     /* main */
     h2 {
@@ -256,8 +265,8 @@ footer nav ul li:hover {
 
     /* interact with work */
     .application::before {
-        top: 10%;
-        bottom: 10%;
+        top: 11.5%;
+        bottom: 12.5%;
     }
 
     .application#first-app::before {
@@ -266,39 +275,51 @@ footer nav ul li:hover {
     }
 
     /* footer */
-    footer {
+    #contact {
         flex-direction: column;
         align-items: flex-end;
     }
 
-    footer nav {
+    #contact nav {
         width: 100%;
         margin-right: 0;
     }
 
-    footer nav ul li {
-        font-size: 100%;
+    #contact nav ul li {
+        font-size: 125%;
     }
 }
 
-@media screen and (max-width: 768px) {
+/* layout for mobile */
+@media screen and (max-width: 576px) {
+    /* change font size and some image sizes */
     p {
         font-size: 75%
     }
 
     h1 {
-        font-size: 125%;
+        font-size: 200%;
     }
 
     h2 {
-        font-size: 125%;
+        font-size: 150%;
     }
 
     h3 {
         font-size: 100%;
     }
 
-    footer nav ul li {
+    header nav ul li {
+        font-size: 125%;
+    }
+
+    #contact nav ul li {
         font-size: 75%;
+    }
+
+    header img {
+        height: 75px;
+        border-radius: 30px;
+        border-width: 3px;
     }
 }

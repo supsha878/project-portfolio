@@ -10,10 +10,11 @@
     </head>
 
     <body>
+        <!-- contains name, picture, and navigation links to rest of page -->
         <header>
             <figure>
                 <figcaption><h1>Supriya Sharma</h1></figcaption>
-                <img href="./assets/images/supriya.jpg" alt="picture of Supriya on the Pillbox Hike in Kailua, Hawaii">
+                <img src="./assets/images/supriya.jpg" alt="picture of Supriya on the Pillbox Hike in Kailua, Hawaii">
             </figure>
             <nav>
                 <ul>
@@ -26,6 +27,7 @@
 
         <main>
 
+            <!-- title and background information -->
             <section id="about">
                 <h2>About</h2>
                 <article>
@@ -41,57 +43,59 @@
                 </article>
             </section>
 
+            <!-- contains application figures wrapped in anchors to deployed projects -->
             <section id="work">
                 <h2>Work</h2>
                 <div class="apps-container">
-                    <figure class="application" id="first-app">
-                        <a href="https://supsha878.github.io/hw1-semantic-markup/">
-                            <img src="./assets/images/code.JPG" alt="large block of code on a screen">
-                            </a>
-                            <figcaption>
-                                <h3>Refactor</h3>
-                                <p>HTML/CSS</p>
-                            </figcaption>
-                    </figure>
-                    <figure class="application">
-                        <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">
+                    <a href="https://supsha878.github.io/hw1-semantic-markup/" class="application" id="first-app">
+                        <figure>
+                                <img src="./assets/images/code.JPG" alt="large block of code on a screen">
+                                <figcaption>
+                                    <h3>Refactor</h3>
+                                    <p>HTML/CSS</p>
+                                </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" class="application">
+                        <figure>
                             <img src="./assets/images/test.JPG" alt="test form with answers filled out and a pencil resting on top">
                             <figcaption>
                                 <h3>Test Taker</h3>
                                 <p>JavaScript</p>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure class="application">
-                        <a href="https://nodejs.dev/learn">
+                        </figure>
+                    </a>
+                    <a href="https://nodejs.dev/learn" class="application">
+                        <figure>
                             <img src="./assets/images/chess.JPG" alt="chess board with pieces on top, mid-game">
                             <figcaption>   
                                 <h3>Chess</h3>
                                 <p>Node.js</p>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure class="application">
-                        <a href="https://www.sqltutorial.org/">
+                        </figure>
+                    </a>
+                    <a href="https://www.sqltutorial.org/" class="application">
+                        <figure>    
                             <img src="./assets/images/books.PNG" alt="stacks of book on bookshelves">
                             <figcaption>
                                 <h3>Book Catalog</h3>
                                 <p>SQL</p>
                             </figcaption> 
-                        </a>
-                    </figure>
-                    <figure class="application">
-                        <a href="https://www.mongodb.com/languages/mern-stack-tutorial">
+                        </figure>
+                    </a>
+                    <a href="https://www.mongodb.com/languages/mern-stack-tutorial" class="application">
+                        <figure>
                             <img src="./assets/images/checklist.JPG" alt="a hand writing a to-do list in a notebook">
                             <figcaption>
                                 <h3>Task App</h3>
                                 <p>MERN Stack</p>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
             </section>
 
+            <!-- contact information with links -->
             <footer id="contact">
                 <h2>Contact</h2>
                 <nav>
